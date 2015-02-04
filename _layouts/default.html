@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>hi carito</title>
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
  
  <header>
  	<strong> enlace de sites</strong>
- 	<nav>
- 		<ul>
- 			<li><a href="{{site.baseurl}}/index.html">home</a></li>
- 			<li><a href="{{site.baseurl}}/news.html">news</a></li>
- 		</ul>
- 	</nav>
+ 	 {% include nav.html navclass ='nav-top' %}
  </header>
 
 {{content}}
+
+<footer>
+ {% include nav.html navclass ='nav-bottom' %}
+	<p> © 2015 enlace creado</p>
+</footer>
 
 </body>
 </html>

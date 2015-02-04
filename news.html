@@ -3,3 +3,12 @@ layout: default
 ---
 
 <h1>news</h1>
+
+<ul>
+ {% for news in site.categories.news %}
+	<li>
+		<a href="">{{news.title}}</a>
+		<p>{{news.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>
